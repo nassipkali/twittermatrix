@@ -235,7 +235,11 @@
 				var messageUrl = "https://twitter.com/" + msg.user.screen_name + "/status/" + msg.id_str;
 				twitterMessages.push({ text: msg.text, url: messageUrl });
 			}
-
+			
+			var msg_txt = "Bla bla"
+			var msg_url = "https://twitter.com/dawdawdawd/status/1000"
+			twitterMessages.push({ text: msg_txt, url: msg_url });
+			/*
 			PUBNUB.init({
 				subscribe_key: 'pub-c-fc30c8f5-83f5-4730-bc71-696937c57145',
 				ssl: true
@@ -252,6 +256,7 @@
 					}
 				}
 			});
+			*/
 
 		}
 	</script>
